@@ -12,8 +12,10 @@
 package ru.geekbrains.java_core_level3;
 
 public class Main {
-
     public static void main(String[] args) {
-	// Homework-3.7
+        ClassForTesting classForTesting = new ClassForTesting();
+        TestsHandler.start(classForTesting.getClass());
+        System.out.println();
+        ClassExplorer.outClassInfo(String.class);
     }
 }
